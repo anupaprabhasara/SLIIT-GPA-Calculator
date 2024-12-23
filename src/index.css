@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #000;
+}
+
+a, p, h1, h2, h3, h4, h5, h6 {
+  cursor: default;
+}
+
+/* Custom glow effects */
+.glow-text {
+  text-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+}
+
+.glow-border {
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(168, 85, 247, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(168, 85, 247, 0.3);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(168, 85, 247, 0.5);
+}

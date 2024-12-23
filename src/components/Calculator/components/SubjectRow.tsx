@@ -20,7 +20,7 @@ export const SubjectRow: React.FC<SubjectRowProps> = ({
   onRemove,
 }) => {
   return (
-    <div className="mb-0.5 grid grid-cols-[1.5fr,70px,70px,40px] sm:grid-cols-[1fr,100px,100px,40px] gap-2 sm:gap-4 items-center">
+    <div className="pb-0.5 grid grid-cols-[1.5fr,70px,70px,40px] sm:grid-cols-[1fr,100px,100px,40px] gap-2 sm:gap-4 items-center">
       <Input
         type="text"
         placeholder="Module name"

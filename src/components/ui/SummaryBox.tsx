@@ -63,7 +63,7 @@ export const SummaryBox: React.FC<SummaryBoxProps> = ({ subjects }) => {
         
         <div className="pt-4 border-t border-purple-500/20">
           <div className="flex justify-between items-center">
-            <span className="text-purple-300 sm:text-purple-300">Cumulative GPA</span>
+            <span className="text-purple-300">Cumulative GPA</span>
             <span className={`text-2xl font-bold ${getGPAClass(gpa)}`}>
               {gpa.toFixed(2)}
             </span>

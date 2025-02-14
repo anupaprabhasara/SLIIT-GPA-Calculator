@@ -1,4 +1,3 @@
-import React from 'react';
 import { GradeTable } from './components/GradeTable';
 import { Calculator } from './components/Calculator';
 import { PageHeader } from './components/PageHeader';
@@ -15,7 +14,7 @@ export default function App() {
         </div>
 
         <footer className="text-center mt-10 sm:mt-12 mb-3 sm:mb-0 text-purple-400/60 text-sm">
-        <a href="https://anupa.lk">© {new Date().getFullYear()} SLIIT GPA Calculator. Developed by Anupa.</a>
+        <a href="https://www.anupa.lk">© {new Date().getFullYear()} SLIIT GPA Calculator. Developed by Anupa.</a>
         </footer>
       </div>
     </div>

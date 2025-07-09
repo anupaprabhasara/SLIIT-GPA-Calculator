@@ -8,10 +8,16 @@ interface ModeSelectorProps {
 
 export const ModeSelector: React.FC<ModeSelectorProps> = ({ currentMode, onModeChange }) => {
   const modes: { key: PresetMode; label: string; description: string }[] = [
-    { key: 'custom', label: 'Custom', description: 'Add your own modules' },
-    { key: 'Y1S1', label: 'Y1S1', description: 'Year 1 Semester 1' },
-    { key: 'Y1S2', label: 'Y1S2', description: 'Year 1 Semester 2' },
-    { key: 'Y2S1', label: 'Y2S1', description: 'Year 2 Semester 1' },
+    { key: 'custom', label: 'Custom', description: 'Add your own' },
+    { key: 'Y1S1N', label: 'Y1S1 Only', description: 'New Syllabus' },
+    { key: 'Y1S1O', label: 'Y1S1 Only', description: 'Old Syllabus' },
+    { key: 'Y1S2N', label: 'Y1S2 Only', description: 'New Syllabus' },
+    { key: 'Y1S2O', label: 'Y1S2 Only', description: 'Old Syllabus' },
+    { key: 'Y2S1O', label: 'Y2S1 Only', description: 'Old Syllabus' },
+    { key: 'Y2S2O', label: 'Y2S2 Only', description: 'Old Syllabus' },
+    { key: 'Y1S2', label: 'Up to Y1S2', description: 'New Syllabus' },
+    { key: 'Y2S1', label: 'Up to Y2S1', description: 'Old Syllabus' },
+    { key: 'Y2S2', label: 'Up to Y2S2', description: 'Old Syllabus' },
   ];
 
   return (

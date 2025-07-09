@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /
+Disallow:
 
 Sitemap: https://sliitcalc.anupa.lk/sitemap.xml

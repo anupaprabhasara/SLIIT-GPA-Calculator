@@ -10,3 +10,8 @@ export interface GradeInfo {
   gpa: number;
   range: string;
 }
+
+export type PresetMode = 'custom' | 'Y1S1' | 'Y1S2' | 'Y2S1';
+
+export interface PresetSubject {
+}

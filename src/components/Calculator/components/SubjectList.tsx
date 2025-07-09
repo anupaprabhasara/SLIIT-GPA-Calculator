@@ -1,16 +1,18 @@
 import React from 'react';
 import { SubjectRow } from './SubjectRow';
-import { Subject } from '../../../types';
+import { Subject, PresetMode } from '../../../types';
 import { getCreditOptions, getGradeOptions } from '../utils/options';
 
 interface SubjectListProps {
   subjects: Subject[];
+  mode: PresetMode;
   onUpdate: (id: number, field: keyof Subject, value: string | number) => void;
   onRemove: (id: number) => void;
 }
 
 export const SubjectList: React.FC<SubjectListProps> = ({
   subjects,
+  mode,
   onUpdate,
   onRemove,
 }) => {
@@ -32,6 +34,7 @@ export const SubjectList: React.FC<SubjectListProps> = ({
             <SubjectRow
               key={subject.id}
               subject={subject}
+              mode={mode}
               creditOptions={creditOptions}
               gradeOptions={gradeOptions}
               onUpdate={onUpdate}

@@ -1,11 +1,15 @@
 import React from 'react';
 import { PlusCircle } from 'lucide-react';
+import { PresetMode } from '../../../types';
 
 interface AddSubjectButtonProps {
+  mode: PresetMode;
   onClick: () => void;
 }
 
-export const AddSubjectButton: React.FC<AddSubjectButtonProps> = ({ onClick }) => {
+export const AddSubjectButton: React.FC<AddSubjectButtonProps> = ({ mode, onClick }) => {
+  if (mode !== 'custom') return null;
+
   return (
     <button
       onClick={onClick}

@@ -16,7 +16,7 @@ export const presets: Record<string, PresetSubject[]> = {
   Y1S2N: [
     { name: 'DM', credits: 4 },
     { name: 'DSA', credits: 4 },
-    { name: 'SE', credits: 4 },
+    { name: 'OOP', credits: 4 },
     { name: 'TW', credits: 4 },
   ],
   Y1S2O: [
@@ -47,7 +47,7 @@ export const presets: Record<string, PresetSubject[]> = {
     { name: 'FC', credits: 4 },
     { name: 'DM', credits: 4 },
     { name: 'DSA', credits: 4 },
-    { name: 'SE', credits: 4 },
+    { name: 'OOP', credits: 4 },
     { name: 'TW', credits: 4 },
   ],
   Y2S1: [
